@@ -1,11 +1,11 @@
 from setuptools import setup
 
 setup(
-    name = 'pycli',
-    version = '0.1.0',
-    packages = ['pycli'],
+    name = 'PStock',
+    version = '0.0.1',
+    packages = ['base'],
     entry_points = {
         'console_scripts': [
-            'pycli = pycli.__main__:main'
+            'PStock = base.__main__:main'
         ]
     })
