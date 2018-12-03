@@ -14,7 +14,7 @@ def main():
 
     my_function('hello world')
 
-    my_object = MyClass('Thomas')
+    my_object = MyClass('Debjyoti')
     my_object.say_name()
 
 if __name__ == '__main__':
