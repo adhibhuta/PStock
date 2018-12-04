@@ -11,7 +11,7 @@ def main():
     print('in main')
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--name', type=str, default='google',
+    parser.add_argument('--symbol', type=str, default='googl',
 		        help='Name of the stock for price') #P change this to something meaningful   
     args =  parser.parse_args()
     sys.stdout.write(my_function(args))
