@@ -2,6 +2,7 @@
 
 
 def my_function(args):
-	name = args.name
-	return name 
+	symbol = args.symbol
+	link =  "https://www.alphavantage.co/query?function=GLOBAL_QUOTES&symbol={}&apikey=demo".format(symbol)
+	return link 
 
