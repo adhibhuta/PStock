@@ -1,12 +1,14 @@
-#Author: lladhibhutall 
+#author: lladhibhutall 
 
 
 import sys
 import argparse
+import click
 
 from .classmodule import MyClass
 from .funcmodule import my_function
 
+@click.command()
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--symbol', type=str, default='googl',
