@@ -2,6 +2,7 @@
 import requests
 import json
 import pprint
+import time
 
 def my_function(args):
 
@@ -9,11 +10,9 @@ def my_function(args):
 	r = requests.get(link)
 	json_data = r.json()
 	return (convert_json_to_dict(json_data))
-	#return isinstance(json_data,dict) 
 
 def convert_json_to_dict(_json):
 	stock_data = _json['Time Series (5min)']
-	#s_data = {}
 	list_of_dict_data = []
 	for key,value in stock_data.items():	
 		s_data = {}
@@ -21,3 +20,7 @@ def convert_json_to_dict(_json):
 		s_data['Position'] = value['1. open']
 		list_of_dict_data.append(s_data)	
 	return list_of_dict_data
+
+def sort_by_time(data_list):
+	data_list.sort(key=lambda x:time.mktime(time.strptime(x['Timestamp'], '%Y-%m-%d %H:%M:%S')))
+	return data_list
