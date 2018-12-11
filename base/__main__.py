@@ -3,7 +3,7 @@ import pprint
 import click
 
 from .classmodule import MyClass
-from .funcmodule import my_function, sort_by_time
+from .funcmodule import my_function, sort_by_time, sorted_XY
 from .drawmodule import draw_plot
 @click.command()
 @click.argument('symbol')
@@ -14,7 +14,8 @@ def main(symbol):
     unsorted_list = my_function(symbol)
     sorted_list = sort_by_time(unsorted_list)
     #pp.pprint(sorted_list)
-    draw_plot(sorted_list)
+    X,Y = sorted_XY(sorted_list)
+    draw_plot(X,Y)
 
 if __name__ == '__main__':
     main()
