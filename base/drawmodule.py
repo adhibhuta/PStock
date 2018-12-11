@@ -6,7 +6,7 @@ def draw_plot(data_to_draw):
 	c = Canvas()
 	for x in data_to_draw:
 		index = data_to_draw.index(x)
-		c.set(index, float(x['Position']))
+		c.set( float(x['Position']), index)
 	print(c.frame())
 print(c.frame())
 
