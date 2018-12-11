@@ -1,15 +1,12 @@
-
-m drawille import Canvas
-from math import sin, radians
+from drawille import Canvas
 
 c = Canvas()
 
-dict={3:1,2:2,1:3}
-
-for x in range(1,100):
-        dict[x] = x
-
-for key,value in dict.items():
-        c.set(key,value) 
+def draw_plot(data_to_draw):
+	c = Canvas()
+	for x in data_to_draw:
+		index = data_to_draw.index(x)
+		c.set(index, float(x['Position']))
+	print(c.frame())
 print(c.frame())
 
