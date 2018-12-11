@@ -13,7 +13,11 @@ def my_function(args):
 
 def convert_json_to_dict(_json):
 	stock_data = _json['Time Series (5min)']
-	s_data = {}
+	#s_data = {}
+	list_of_dict_data = []
 	for key,value in stock_data.items():	
-		s_data[key] = value['1. open']	
-	return s_data
+		s_data = {}
+		s_data['Timestamp'] = key 
+		s_data['Position'] = value['1. open']
+		list_of_dict_data.append(s_data)	
+	return list_of_dict_data
