@@ -14,7 +14,10 @@ def main(symbol):
     unsorted_list = my_function(symbol)
     sorted_list = sort_by_time(unsorted_list)
     #pp.pprint(sorted_list)
+    print("")
     X,Y = sorted_XY(sorted_list)
+    click.echo("       current price is ${}".format(Y[-1]))
+    print("")
     draw_plot(X,Y)
 
 if __name__ == '__main__':
