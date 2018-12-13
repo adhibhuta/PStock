@@ -24,3 +24,13 @@ def convert_json_to_dict(_json):
 def sort_by_time(data_list):
 	data_list.sort(key=lambda x:time.mktime(time.strptime(x['Timestamp'], '%Y-%m-%d %H:%M:%S')))
 	return data_list
+
+def sorted_XY(sorted_list):
+	X = []
+	Y = []
+	count = 1
+	for _ in sorted_list:
+		Y.append(float(_['Position']))
+		X.append(count)
+		count = count + 1
+	return X,Y
