@@ -5,13 +5,15 @@ import click
 from .classmodule import MyClass
 from .funcmodule import my_function, sort_by_time, sorted_XY
 from .drawmodule import draw_plot
+
 @click.command()
+@click.option('--interval', default=5, help='time difference between querries')
 @click.argument('symbol')
 def main(symbol):
     ''' Enter the Symbol'''  
     pp = pprint.PrettyPrinter(indent=4)
     #click.echo(my_function(symbol))
-    unsorted_list = my_function(symbol)
+    unsorted_list = my_function(symbol,interval)
     sorted_list = sort_by_time(unsorted_list)
     last_item = sorted_list[-1]
     #pp.pprint(sorted_list)
