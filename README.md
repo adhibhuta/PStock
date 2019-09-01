@@ -20,3 +20,6 @@ Once the installation is complete, type "PStock [ticker symbol of the company tr
 For example, if you type "PStock MSFT" you get the following graph, all within your terminal
 
 ![jpg](/Images/Microsoft.jpg)
+
+Similarly, if you repeat the exercise for Amazon (Ticker symbol is AMZN), you will get the following graph - 
+![jpg](/Images/Amazon.jpg)
