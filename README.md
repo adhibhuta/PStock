@@ -18,3 +18,5 @@ Once the installation is complete, type "PStock [ticker symbol of the company tr
 
 ## Step 3:- 
 For example, if you type "PStock MSFT" you get the following graph, all within your terminal
+
+![jpg](/images/Microsoft.jpg)
