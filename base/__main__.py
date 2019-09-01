@@ -25,7 +25,7 @@ def main(symbol):
     click.echo("       current low is ${}".format(last_item['low']))
     click.echo("       current high is ${}".format(last_item['high']))
     click.echo("       current volume is {}".format(last_item['volume']))
-    click.echo("       current market cap is {}".format(last_item['volume']*format(last_item['open']))
+    click.echo("       current market cap is {}".format(last_item['volume']*(last_item['open']))
     print("")
 
 if __name__ == '__main__':
