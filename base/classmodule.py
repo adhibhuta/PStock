@@ -1,4 +1,4 @@
-#Author: lladhibhutall 
+#author: lladhibhutall Pratyush Choudhury
 
 class MyClass():
     def __init__(self, name):

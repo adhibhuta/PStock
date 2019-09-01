@@ -1,4 +1,4 @@
-#Author: lladhibhutall 
+#author: lladhibhutall Pratyush Choudhury
 import requests
 import json
 #import pprint
