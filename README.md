@@ -1,3 +1,8 @@
+This is a project created by - 
+[Debjyoti Biswas](https://www.linkedin.com/in/debjyotibiswas125/) and 
+[Pratyush Choudhury](https://www.linkedin.com/in/pratyushchoudhury/)
+
+
 # Instructions to use:-
 
 # Step 1:-
