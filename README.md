@@ -1,4 +1,4 @@
-This is a project created by - 
+This is a project created and maintained by - 
 [Debjyoti Biswas](https://www.linkedin.com/in/debjyotibiswas125/) and</br> 
 [Pratyush Choudhury](https://www.linkedin.com/in/pratyushchoudhury/)
 
